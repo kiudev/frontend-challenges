@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Montserrat:wght@400;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: hsl(30, 38%, 92%);
+   font-family: 'Montserrat', sans-serif;
+   color: hsl(212, 21%, 14%);
+}
+
+main {
+   display: block;
+   padding: 20px;
+   margin-top: 10vh;
+}
+
+header {
+   display: flex;
+   justify-content: center;
+}
+
+header .image-mobile { 
+   width: 90vw;
+   border-radius: 10px 10px 0 0;
+}
+
+header .image-desktop {
+   display: none;
+}
+
+section {
+   background-color: hsl(0, 0%, 100%);
+   width: 90vw;
+   margin: auto;
+   padding: 20px;
+   border-radius: 0 0 10px 10px;
+   
+}
+
+.product-section {
+   color: hsl(212, 21%, 35%);
+   letter-spacing: 5px;
+   text-transform: uppercase;
+   margin-top: 5px;
+   font-weight: bold;
+}
+
+section h1 {
+   font-family: 'Fraunces', sans-serif;
+   font-style: bold;
+   font-size: 40px;
+   line-height: 40px;
+   margin-top: 10px;
+}
+
+.description {
+   margin-top: 20px;
+   color: hsl(212, 21%, 35%);
+}
+
+ul {
+   margin-top: 20px;
+   display: flex;
+   gap: 20px;
+   align-items: center;
+}
+
+.price, .previous-price {
+   list-style: none;
+}
+
+.price {
+   font-size: 40px;
+   font-family: 'Fraunces', sans-serif;
+   font-weight: bold;
+   color: rgb(62, 134, 87);
+}
+
+.previous-price {
+   color: hsl(212, 21%, 35%);
+}
+
+button {
+   background-color: rgb(62, 134, 87);
+   padding: 15px;
+   width: 300px;
+   color: hsl(0, 0%, 100%);
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   margin: auto;
+   font-weight: bold;
+   margin-top: 10px;
+   border: none;
+   cursor: pointer;
+   border-radius: 10px;
+}
+
+button:hover {
+   background-color: rgb(49, 104, 68);
+}
+
+@media (min-width: 800px) {
+   main {
+      display: flex;
+      justify-content: center;
+      margin-top: 15vh;
+   }
+
+   header .image-mobile {
+      display: none;
+   }
+
+   header .image-desktop {
+      display: block;
+      width: 350px;
+      height: 500px;
+      margin: auto;
+      border-radius: 10px 0 0 10px;
+   }
+
+   header {
+      margin-left: -370px;
+   }
+
+   section {
+      width: 400px;
+      height: 500px;
+      margin: auto;
+      margin-top: 0;
+      margin-left: 370px;
+      border-radius: 0 10px 10px 0;
+      padding: 40px;
+      position: absolute;
+   }
+
+   .product-section {
+      margin-top: 0;
+   }
+
+   section h1 {
+      margin-top: 25px;
+   }
+
+   .description {
+      margin-top: 30px;
+   }
+
+   ul {
+      margin-top: 30px;
+   }
+
+   button {
+      margin-top: 30px;
+   }
+}

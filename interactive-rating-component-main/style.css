@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: hsl(216, 12%, 8%);
+   color: hsl(0, 0%, 100%);
+   padding: 20px;
+   font-family: 'Overpass', sans-serif;
+}
+
+.rating-state, .thank-state {
+   background-color: hsl(213, 19%, 18%);
+   max-width: 410px;
+   max-height: 450px;
+   margin: auto;
+   padding: 30px;
+   border-radius: 20px;
+   margin-top: 20vh;
+}
+
+.thank-state {
+   display: none;
+}
+
+.rating-header {
+   background-color: hsl(215, 20%, 25%);
+   padding: 12px;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+}
+
+.thank-header {
+   background-color: hsl(213, 19%, 18%);
+   height: 180px;
+   display: block;
+   width: 210px;
+   margin: auto;
+}
+
+.thank-header .result {
+   margin-top: 20px;
+   background-color: hsl(215, 20%, 25%);
+   padding: 10px;
+   text-align: center;
+   color: hsl(25, 97%, 53%);
+   border-radius: 20px;
+}
+
+.thank-section {
+   margin-top: 20px;
+   text-align: center;
+}
+
+.rating-section {
+   margin-top: 20px;
+}
+
+.rating-section p, .thank-section p {
+   margin-top: 10px;
+   color: hsl(216, 12%, 54%);
+}
+
+.rating-container {
+   margin-top: 20px;
+}
+
+.rating-container p {
+   display: flex;
+   justify-content: space-around;
+}
+
+button {
+   background-color: hsl(215, 20%, 25%);
+   color: hsl(216, 12%, 54%);
+   padding: 20px;
+   height: 50px;
+   font-size: 18px;
+   border-radius: 999px;
+   text-align: center;
+   border: none;
+   line-height: 0px;
+   cursor: pointer;
+}
+
+input {
+   background-color: hsl(25, 97%, 53%);
+   padding: 13px;
+   border: none;
+   color: hsl(0, 0%, 100%);
+   width: 100%;
+   border-radius: 20px;
+   font-size: 14px;
+   letter-spacing: 2px;
+   font-weight: bold;
+   margin-top: 20px;
+   transition: all 0.2s ease-in-out;
+   cursor: pointer;
+}
+
+button:hover {
+   background-color: hsl(216, 12%, 54%);
+   color: #fff;
+}
+
+.rating:focus {
+   background-color: hsl(25, 97%, 53%);
+   color: #fff;
+}
+
+input:hover {
+   background-color: hsl(25, 100%, 40%);
+}
+
+.back-button {
+   margin-left: -80px;
+   padding: 10px;
+}
+
+.thank-header img {
+   margin-left: 50px;
+}
+
+@media (min-width: 1366px) and (min-height: 768px) {
+   h1 {
+      font-size: 30px;
+   }
+
+   p {
+      font-size: 18px;
+   }
+}
